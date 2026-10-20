@@ -5,17 +5,15 @@ permalink: /research/
 author_profile: true
 ---
 
-My research interests lie at the intersection of financial economics, machine learning, and quantitative risk analysis.
+<div class="section-heading"><h2>Working Paper</h2></div>
+{% include working-paper-list.html %}
 
-## Empirical Asset Pricing
+<h2>Research Interests</h2>
 
-I am interested in the measurement and predictability of systematic risk, the cross-section of stock returns, and the implications of predictive signals for portfolio decisions.
+- **Artificial Intelligence and Asset Pricing:** machine learning, return predictability, and systematic risk
+- **Intelligent Risk Control and RegTech:** data-driven risk assessment and financial regulation
+- **Multimodal Data and Alternative Finance:** alternative information sources and multimodal analysis of financial markets
+- **Quantum Financial Technology:** applications of emerging computational paradigms in finance
+- **IFRS and Cross-Border Capital Flows:** financial reporting and international capital markets
 
-## Machine Learning in Finance
-
-I explore how machine learning and deep learning methods can be used to analyze financial time series and improve financial forecasting.
-
-## Financial Risk Management
-
-I am also interested in applications of data-driven methods to risk measurement, portfolio construction, and financial stability.
-
+<p class="section-note">Working paper manuscript and supplementary materials are not publicly posted at this time.</p>

@@ -10,30 +10,32 @@ redirect_from:
 {% include base_path %}
 
 <div class="home-intro">
-<p>Welcome! I am a Ph.D. student in Financial Technology at Southwestern University of Finance and Economics (SWUFE), China.</p>
-<p>My academic interests lie at the intersection of finance and data science, especially empirical asset pricing, machine learning in finance, and financial risk management. I am interested in understanding financial markets through quantitative methods and exploring how modern predictive models can inform investment and risk decisions.</p>
+<p>Welcome! I am <strong>Quanyi Kang (亢泉乂)</strong>, a Ph.D. student in Financial Technology in the joint training program for high-level talents between <strong>Southwestern University of Finance and Economics (SWUFE)</strong> and the <strong>University of Electronic Science and Technology of China (UESTC)</strong>.</p>
+<p>My research interests lie at the intersection of artificial intelligence, asset pricing, and financial risk management. I am particularly interested in quantitative methods, multimodal financial information, and emerging technologies in financial markets.</p>
+<p>I am originally from Shanxi Province, China. I am an ACCA candidate (in progress) and a member of the Communist Party of China.</p>
 </div>
 
+<div class="section-heading">
+<h2>Working Paper</h2>
+<a href="{{ base_path }}/research/">Research <span aria-hidden="true">&rarr;</span></a>
+</div>
+{% include working-paper-list.html compact=true limit=1 %}
+
 ## Research Interests
-
-- **Empirical Asset Pricing:** systematic risk, return predictability, and investment strategies
-- **Machine Learning in Finance:** deep learning, financial time series, and predictive modeling
-- **Financial Risk Management:** risk measurement, portfolio construction, and financial stability
-
-<p><a href="{{ base_path }}/research/">Explore research interests <span aria-hidden="true">&rarr;</span></a></p>
+- Artificial Intelligence and Asset Pricing
+- Intelligent Risk Control and Regulatory Technology (RegTech)
+- Multimodal Data and Alternative Finance
+- Quantum Financial Technology
+- IFRS and Cross-Border Capital Flows
 
 <div class="career-grid">
 {% include career-section.html type="education" title="Education" %}
 </div>
 
-## Teaching
+## Academic Presentations
+I participate in academic exchanges in financial systems engineering, finance, and management science.
 
-My academic activities include teaching assistance and course preparation in derivatives and corporate finance.
-
-<p><a href="{{ base_path }}/teaching/">Teaching experience <span aria-hidden="true">&rarr;</span></a></p>
+<p><a href="{{ base_path }}/presentation/">Conference presentations and dates <span aria-hidden="true">&rarr;</span></a></p>
 
 ## Contact
-
-I welcome academic discussions and opportunities for research collaboration.
-
-<p><a href="{{ base_path }}/contact/">Contact information <span aria-hidden="true">&rarr;</span></a></p>
+For academic exchange or potential research collaboration, please contact me at <a href="mailto:775180797@qq.com">775180797@qq.com</a>.

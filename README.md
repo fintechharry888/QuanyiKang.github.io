@@ -1,28 +1,20 @@
 # Quanyi Kang — Academic Website
 
-This repository contains the source code for the personal academic website of Quanyi Kang, a Ph.D. student in Financial Technology at Southwestern University of Finance and Economics (SWUFE).
+Academic homepage of Quanyi Kang (亢泉乂), a Ph.D. student in Financial Technology in a joint training program at Southwestern University of Finance and Economics (SWUFE) and the University of Electronic Science and Technology of China (UESTC).
 
-- **Website:** https://fintechharry888.github.io/QuanyiKang.github.io/
-- **Repository:** https://github.com/fintechharry888/QuanyiKang.github.io
+- Homepage: https://fintechharry888.github.io/QuanyiKang.github.io/
+- Email: 775180797@qq.com
+- Research: AI and asset pricing, RegTech, multimodal finance, quantum financial technology, IFRS and cross-border capital flows
 
-## Website sections
+Pages:
+- `_pages/about.md` — About
+- `_pages/research.md` — Working Paper and interests
+- `_pages/teaching.html` — Teaching
+- `_pages/presentation.md` — Academic presentations
+- `_pages/contact.md` — Contact
 
-- **About:** academic introduction and educational background
-- **Research:** research interests in asset pricing, machine learning, and risk management
-- **Teaching:** teaching assistance and course support
-- **Contact:** professional links and affiliation
+Portrait: `images/profile.jpg` (scaled proportionally for website performance; no facial alterations).
 
-The website currently does not list publications, working papers, datasets, or a downloadable CV. Those sections can be added when confirmed materials are available.
+This GitHub Pages project uses the `master` branch and `baseurl: "/QuanyiKang.github.io"`.
 
-## Updating the website
-
-- Edit `_pages/about.md`, `_pages/research.md`, `_pages/teaching.html`, and `_pages/contact.md` to update page content.
-- Edit `_config.yml` to update the name, affiliation, sidebar, and site metadata.
-- Edit `_data/navigation.yml` to update the menu.
-- The portrait currently uses the public avatar of the website owner's GitHub account; it can be replaced with a professional photo later.
-
-GitHub Pages is configured to deploy the `master` branch from `/(root)`. This is a project site with `baseurl: "/QuanyiKang.github.io"`.
-
-## License
-
-Licenses and copyright notices for the website's underlying open-source theme are preserved in [LICENSE](LICENSE).
+The underlying website theme's software license is retained in `LICENSE`.

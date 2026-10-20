@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Quanyi Kang"
 title_separator          : "-"
 name                     : &name "Quanyi Kang"
-description              : &description "Academic profile of Quanyi Kang, a Ph.D. student in Financial Technology at Southwestern University of Finance and Economics. Research interests: empirical asset pricing, machine learning in finance, and financial risk management."
+description              : &description "Quanyi Kang (亢泉乂) is a Ph.D. researcher in Financial Technology in the joint training program of Southwestern University of Finance and Economics and the University of Electronic Science and Technology of China. His interests include AI and asset pricing, RegTech, multimodal finance, quantum financial technology, and cross-border capital flows."
 url                      : "https://fintechharry888.github.io"
 baseurl                  : "/QuanyiKang.github.io" # project-site repository under fintechharry888
 repository               : "fintechharry888/QuanyiKang.github.io"
@@ -19,13 +19,14 @@ repository               : "fintechharry888/QuanyiKang.github.io"
 # Page descriptions used for search results and social previews.
 seo_descriptions:
   "/": *description
-  "/research/": "Research interests of Quanyi Kang in empirical asset pricing, machine learning in finance, and financial risk management."
-  "/teaching/": "Teaching and academic support activities of Quanyi Kang."
-  "/contact/": "Contact Quanyi Kang for academic discussion and collaboration."
-og_image                 : "https://avatars.githubusercontent.com/u/231528744?v=4"
+  "/research/": "Working paper and research interests of Quanyi Kang in artificial intelligence and finance."
+  "/teaching/": "Teaching-related experience of Quanyi Kang."
+  "/presentation/": "Conference presentations by Quanyi Kang and upcoming 2026 conferences."
+  "/contact/": "Contact Quanyi Kang, a doctoral researcher in Financial Technology."
+og_image                 : "profile.jpg"
 social:
   type: Person
-  name: "Quanyi Kang"
+  name             : "Quanyi Kang (亢泉乂)"
   links:
     - "https://github.com/fintechharry888"
 
@@ -33,12 +34,12 @@ social:
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar           : "https://avatars.githubusercontent.com/u/231528744?v=4"
+  avatar           : "profile.jpg"
   name             : "Quanyi Kang"
   bio              : "Ph.D. Student in Financial Technology"
   location         : "Chengdu, China"
-  employer         : "Southwestern University of Finance and Economics"
-  email            :
+  employer         : "SWUFE · UESTC Joint Ph.D. Training Program"
+  email            : "775180797@qq.com"
   cv               :
   github           : "fintechharry888"
 
