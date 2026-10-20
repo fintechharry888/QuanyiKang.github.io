@@ -1,4 +1,3 @@
-# main links
 main:
   - title: "About"
     url: /
@@ -9,9 +8,5 @@ main:
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Presentations"
-    url: /presentation/
-
-
-  - title: "CV"
-    url: /cv/
+  - title: "Contact"
+    url: /contact/
