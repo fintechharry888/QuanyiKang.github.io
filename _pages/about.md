@@ -32,6 +32,11 @@ redirect_from:
 {% include career-section.html type="education" title="Education" %}
 </div>
 
+## Teaching
+**Teaching Assistant**, Derivatives (衍生金融工具) · Master of Finance (Professional Degree) · Academic Year 2026–2027, Southwestern University of Finance and Economics.
+
+<p><a href="{{ base_path }}/teaching/">Teaching details <span aria-hidden="true">&rarr;</span></a></p>
+
 ## Academic Presentations
 I participate in academic exchanges in financial systems engineering, finance, and management science.
 
