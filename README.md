@@ -1,43 +1,24 @@
-# Ruijing (Chandler) Yang — Academic Website
+# Quanyi Kang — Academic Website
 
-Source repository for the personal academic website of Ruijing (Chandler) Yang, Assistant Professor in Finance at the University of Macau. The site presents research, teaching, conference presentations, and a curriculum vitae.
+Personal academic website of Quanyi Kang, a Ph.D. student in Financial Technology at Southwestern University of Finance and Economics (SWUFE).
 
-**Website:** [https://ruijingyang.github.io](https://ruijingyang.github.io)
+**Repository:** https://github.com/fintechharry888/QuanyiKang.github.io
 
-Built with Jekyll and hosted on GitHub Pages. Current build and deployment information is available in this repository's [GitHub Actions](https://github.com/RuijingYANG/RuijingYANG.github.io/actions).
+**Expected GitHub Pages project URL (once Pages is enabled):**
+https://fintechharry888.github.io/QuanyiKang.github.io/
 
-## Repository structure
+## Website content
 
-- [`_pages/`](_pages/): main website pages.
-- [`_research/`](_research/): working paper entries.
-- [`_data/`](_data/): navigation, career, and presentation data.
-- [`_config.yml`](_config.yml): site settings.
-- `_includes/`, `_layouts/`, `_sass/`, and `assets/`: templates and styling.
+- `_config.yml`: site and author settings.
+- `_pages/`: About, Research, Teaching, Presentations, and CV.
+- `_research/`: research entries.
+- `_data/`: education and navigation.
+- `_includes/`, `_layouts/`, `_sass/`, `assets/`: preserved academic website theme.
 
-## Downloadable CV
+Add a personal portrait by uploading `images/profile.jpg` and setting `author.avatar: "profile.jpg"` in `_config.yml`. Add a verified academic CV PDF and link it from `_pages/cv.md`.
 
-The official CV is maintained in the [My_CV Overleaf project](https://www.overleaf.com/project/6a43cbacbd56c24076bcb825), in `Chandler_CV.tex`.
+To publish, enable GitHub Pages in **Settings → Pages** using **Deploy from a branch → master → /(root)**. Because this repository's name differs from the GitHub account name, it uses project-site `baseurl: "/QuanyiKang.github.io"`. If you rename the repository to `fintechharry888.github.io`, change `baseurl` to `""`.
 
-For future CV updates, edit that Overleaf source, preserve its existing template,
-compile and check the PDF, then replace `files/Ruijing_Yang_CV.pdf` with the
-compiled download. Synchronize the corresponding website records and verify
-that the published PDF matches the Overleaf export. Teaching entries should
-use the same course titles, semesters, and order on the website and in the CV.
+## Attribution and license
 
-Website records in `_teaching/`, `_research/`, and `_data/` are maintained
-separately; they must not be used to regenerate or replace the official CV.
-
-## Local preview
-
-With Ruby and Bundler installed, run from the repository root:
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
-
-Open `http://localhost:4000` to preview the site.
-
-## Template attribution and license
-
-Adapted from [Academic Pages](https://github.com/academicpages/academicpages.github.io), originally forked by Stuart Geiger from [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose. The underlying theme is released under the MIT License. The original copyright and permission notice are retained in [LICENSE](LICENSE).
+This site adapts the public academic website of [Ruijing (Chandler) Yang](https://github.com/RuijingYANG/RuijingYANG.github.io) and uses the [Academic Pages](https://github.com/academicpages/academicpages.github.io) theme, based on [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes). Theme copyright and license notices remain in [LICENSE](LICENSE). Original research, employment, presentations, course records, portrait, and CV are not reused.

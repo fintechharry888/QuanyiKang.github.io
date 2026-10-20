@@ -7,10 +7,14 @@
 <div class="author-profile" itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
-    {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
+    {% if author.avatar %}
+      {% if author.avatar contains "://" %}
+        <img src="{{ author.avatar }}" alt="{{ author.name }}">
+      {% else %}
+        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+      {% endif %}
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+      <span aria-label="Quanyi Kang" style="display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1;border-radius:50%;background:#edf1f5;color:#445269;font-weight:700;font-size:2rem;">QK</span>
     {% endif %}
   </div>
 
@@ -37,7 +41,7 @@
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
         {% if author.cv %}
-        <li><a href="{{ base_path }}/files/Ruijing_Yang_CV.pdf"><i class="fa-regular fa-file icon-pad-right" aria-hidden="true"></i>{{ author.cv }}</a></li>
+        <li><a href="{{ base_path }}/cv/"><i class="fa-regular fa-file icon-pad-right" aria-hidden="true"></i>{{ author.cv }}</a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->

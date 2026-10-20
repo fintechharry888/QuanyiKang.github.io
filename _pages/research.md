@@ -7,7 +7,8 @@ author_profile: true
 
 {% include base_path %}
 <div class="section-heading">
-<h2>Working Papers</h2>
-{% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">&nearr;</span></a>{% endif %}
+<h2>Research in Progress</h2>
 </div>
 {% include working-paper-list.html %}
+
+<p class="section-note">Research titles are descriptive working titles; publication status, coauthors, and full-text links will be added after verification.</p>

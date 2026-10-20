@@ -8,47 +8,40 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Ruijing (Chandler) YANG"
+title                    : "Quanyi Kang"
 title_separator          : "-"
-name                     : &name "Ruijing (Chandler) YANG"
-description              : &description "Ruijing (Chandler) Yang is an Assistant Professor in Finance at the University of Macau, studying empirical asset pricing, derivatives, and machine learning in finance."
-url                      : https://ruijingyang.github.io
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "RuijingYANG/RuijingYANG.github.io"
+name                     : &name "Quanyi Kang"
+description              : &description "Quanyi Kang is a Ph.D. student in Financial Technology at Southwestern University of Finance and Economics. Research interests include empirical asset pricing, machine learning in finance, and financial risk management."
+url                      : "https://fintechharry888.github.io"
+baseurl                  : "/QuanyiKang.github.io" # project-site repository under fintechharry888
+repository               : "fintechharry888/QuanyiKang.github.io"
 
 # Page descriptions used for search results and social previews.
 seo_descriptions:
   "/": *description
-  "/research/": "Working papers by Ruijing (Chandler) Yang on asset pricing, equity options, corporate bond risk premiums, and visual peer effects."
-  "/teaching/": "Finance courses taught by Ruijing (Chandler) Yang at the University of Macau."
-  "/presentation/": "Conference presentations and discussions by Ruijing (Chandler) Yang."
-  "/cv/": "Education, academic appointments, research interests, and working papers of Ruijing (Chandler) Yang."
-og_image                 : "profile.jpg"
+  "/research/": "Research by Quanyi Kang on empirical asset pricing, stock beta prediction, and machine learning in finance."
+  "/teaching/": "Teaching experience of Quanyi Kang."
+  "/presentation/": "Academic presentations of Quanyi Kang."
+  "/cv/": "Academic background and research interests of Quanyi Kang."
+og_image                 :
 social:
   type: Person
-  name: "Ruijing (Chandler) Yang"
+  name: "Quanyi Kang"
   links:
-    - "https://scholar.google.com/citations?user=VcuYWEEAAAAJ"
-    - "https://www.linkedin.com/in/ruijing-yang-1a34972a1/"
+    - "https://github.com/fintechharry888"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "profile.jpg"
-  name             : "Ruijing (Chandler) YANG"
-  bio              : "Assistant Professor in Finance"
-  location         : "Macau, China"
-  employer         : "University of Macau"
-  email            : "ruijingyang@um.edu.mo" 
+  avatar           :
+  name             : "Quanyi Kang"
+  bio              : "Ph.D. Student in Financial Technology"
+  location         : "Chengdu, China"
+  employer         : "Southwestern University of Finance and Economics"
+  email            :
   cv               : "Curriculum Vitae"
-
-  # Academic websites
-  googlescholar    : "https://scholar.google.com/citations?user=VcuYWEEAAAAJ&hl=en"
-
-  # Social media
-  linkedin         : "ruijing-yang-1a34972a1"
+  github           : "fintechharry888"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -243,7 +236,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Asia/Macau # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
 
 
 # Plugins
