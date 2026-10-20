@@ -12,7 +12,7 @@ redirect_from:
 <div class="home-intro">
 <p>Welcome! I am <strong>Quanyi Kang (亢泉乂)</strong>, a Ph.D. student in Financial Technology in the joint training program for high-level talents between <strong>Southwestern University of Finance and Economics (SWUFE)</strong> and the <strong>University of Electronic Science and Technology of China (UESTC)</strong>.</p>
 <p>My research interests lie at the intersection of artificial intelligence, asset pricing, and financial risk management. I am particularly interested in quantitative methods, multimodal financial information, and emerging technologies in financial markets.</p>
-<p>I am originally from Shanxi Province, China. I am an ACCA candidate (in progress) and a member of the Communist Party of China.</p>
+<p>Personal background: Male; from Shanxi Province, China; member of the Communist Party of China; currently pursuing the ACCA qualification.</p>
 </div>
 
 <div class="section-heading">
