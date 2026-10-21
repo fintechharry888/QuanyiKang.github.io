@@ -8,21 +8,23 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Quanyi Kang"
+title                    : "亢泉乂 | Quanyi Kang"
 title_separator          : "-"
 name                     : &name "Quanyi Kang"
-description              : &description "Quanyi Kang (亢泉乂) is a Ph.D. researcher in Financial Technology in the joint training program of Southwestern University of Finance and Economics and the University of Electronic Science and Technology of China. His interests include AI and asset pricing, RegTech, multimodal finance, quantum financial technology, and cross-border capital flows."
+description              : &description "亢泉乂（Quanyi Kang），西南财经大学—电子科技大学高层次人才联合培养项目金融科技专业博士研究生。研究方向包括人工智能与资产定价、金融风险管理、监管科技、多模态金融及跨境资本流动。Quanyi Kang is a Financial Technology Ph.D. student at SWUFE and UESTC."
 url                      : "https://fintechharry888.github.io"
 baseurl                  : "/QuanyiKang.github.io" # project-site repository under fintechharry888
 repository               : "fintechharry888/QuanyiKang.github.io"
 
+seo_home_title           : "亢泉乂（Quanyi Kang）｜西南财经大学金融科技博士生｜SWUFE"
+
 # Page descriptions used for search results and social previews.
 seo_descriptions:
   "/": *description
-  "/research/": "Working paper and research interests of Quanyi Kang in artificial intelligence and finance."
-  "/teaching/": "Teaching-related experience of Quanyi Kang."
-  "/presentation/": "Conference presentations by Quanyi Kang and upcoming 2026 conferences."
-  "/contact/": "Contact Quanyi Kang, a doctoral researcher in Financial Technology."
+  "/research/": "亢泉乂（Quanyi Kang）学术研究：Transformer、股票Beta预测、人工智能与资产定价、金融风险管理。Research in AI and asset pricing."
+  "/teaching/": "亢泉乂（Quanyi Kang）在西南财经大学的教学与助教经历。Teaching at SWUFE."
+  "/presentation/": "亢泉乂（Quanyi Kang）参加的金融系统工程、金融学与管理科学学术会议及报告。Academic conference presentations."
+  "/contact/": "联系亢泉乂（Quanyi Kang），西南财经大学金融科技博士研究生。Contact for academic collaboration."
 og_image                 : "profile.jpg"
 social:
   type: Person
