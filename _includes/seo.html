@@ -5,6 +5,9 @@
 {% assign canonical_url = page.url | prepend: seo_url | replace: "/index.html", "/" %}
 {% assign seo_page_title = page.title | default: site.title | markdownify | strip_html | strip_newlines | strip %}
 {% assign seo_title = site.title %}
+{% if page.url == "/" and site.seo_home_title %}
+  {% assign seo_title = site.seo_home_title %}
+{% endif %}
 {% if page.title and page.url != "/" and page.title != site.title %}
   {% assign seo_title = seo_page_title | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% endif %}
@@ -28,6 +31,7 @@
 <meta property="og:site_name" content="{{ site.title | escape_once }}">
 <meta property="og:title" content="{{ seo_page_title | escape_once }}">
 <link rel="canonical" href="{{ canonical_url | escape_once }}">
+<link rel="sitemap" type="application/xml" href="{{ seo_url }}/sitemap.xml">
 <meta property="og:url" content="{{ canonical_url | escape_once }}">
 
 {% if page.collection == "posts" %}
@@ -78,6 +82,8 @@
       "@type": "Person",
       "@id": {{ seo_url | append: "/#person" | jsonify }},
       "name": {{ site.social.name | default: site.name | jsonify }},
+      "alternateName": ["亢泉乂", "Quanyi Kang", "Kang Quanyi"],
+      "affiliation": [{"@type":"CollegeOrUniversity","name":"西南财经大学","alternateName":"Southwestern University of Finance and Economics"},{"@type":"CollegeOrUniversity","name":"电子科技大学","alternateName":"University of Electronic Science and Technology of China"}],
       "url": {{ seo_url | append: "/" | jsonify }},
       "jobTitle": {{ site.author.bio | jsonify }},
       "worksFor": {
