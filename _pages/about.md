@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Quanyi Kang"
+title: "亢泉乂（Quanyi Kang）"
 author_profile: true
 redirect_from:
   - /about/
@@ -10,6 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <div class="home-intro">
+<p><strong>亢泉乂（Quanyi Kang）</strong>，西南财经大学—电子科技大学高层次人才联合培养项目金融科技专业博士研究生。主要研究方向为人工智能与资产定价、金融风险管理、监管科技、多模态与另类金融。</p>
 <p>Welcome! I am <strong>Quanyi Kang (亢泉乂)</strong>, a Ph.D. student in Financial Technology in the joint training program for high-level talents between <strong>Southwestern University of Finance and Economics (SWUFE)</strong> and the <strong>University of Electronic Science and Technology of China (UESTC)</strong>.</p>
 <p>My research interests lie at the intersection of artificial intelligence, asset pricing, and financial risk management. I am particularly interested in quantitative methods, multimodal financial information, and emerging technologies in financial markets.</p>
 <p>Personal background: Male; from Shanxi Province, China; member of the Communist Party of China; currently pursuing the ACCA qualification.</p>
