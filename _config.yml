@@ -181,6 +181,11 @@ collections:
 
 # Defaults
 defaults:
+  # Keep the Google ownership-verification file accessible while excluding it from the public page sitemap.
+  - scope:
+      path: "googlefb7484ec50ac4984.html"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
