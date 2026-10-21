@@ -1,4 +1,6 @@
-# Quanyi Kang — Academic Website
+# 亢泉乂（Quanyi Kang）｜西南财经大学金融科技博士生｜Academic Homepage
+
+亢泉乂个人学术主页，研究方向涵盖人工智能与资产定价、Transformer、股票 Beta 预测、金融风险管理等。
 
 Academic homepage of Quanyi Kang (亢泉乂), a Ph.D. student in Financial Technology in a joint training program at Southwestern University of Finance and Economics (SWUFE) and the University of Electronic Science and Technology of China (UESTC).
 
