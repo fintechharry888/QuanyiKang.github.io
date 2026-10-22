@@ -1,0 +1,68 @@
+name: Notify search engines via IndexNow
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '_pages/**'
+      - '_research/**'
+      - '_includes/**'
+      - '_config.yml'
+      - 'a0204dd3c7e4cafc158e37f1886f96c4.txt'
+      - '.github/workflows/indexnow.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      SITE_BASE: https://fintechharry888.github.io/QuanyiKang.github.io
+      INDEXNOW_KEY: a0204dd3c7e4cafc158e37f1886f96c4
+    steps:
+      - name: Confirm IndexNow ownership key is publicly readable
+        shell: bash
+        run: |
+          set -euo pipefail
+          KEY_URL="$SITE_BASE/$INDEXNOW_KEY.txt"
+          for i in {1..18}; do
+            if curl --fail --silent --show-error --location --max-time 15 "$KEY_URL" 2>/dev/null | tr -d '\r\n' | grep -Fxq "$INDEXNOW_KEY"; then
+              echo "Verified public IndexNow key file."
+              exit 0
+            fi
+            echo "Waiting for GitHub Pages to publish the IndexNow key ($i/18)"
+            sleep 15
+          done
+          echo "IndexNow key file was not publicly available after retries."
+          exit 1
+
+      - name: Send updated academic site URLs to IndexNow
+        shell: bash
+        run: |
+          set -euo pipefail
+          KEY_URL="$SITE_BASE/$INDEXNOW_KEY.txt"
+          urls=(
+            "$SITE_BASE/"
+            "$SITE_BASE/research/"
+            "$SITE_BASE/teaching/"
+            "$SITE_BASE/presentation/"
+            "$SITE_BASE/contact/"
+          )
+          for url in "${urls[@]}"; do
+            status=$(curl --silent --show-error --max-time 30 \
+              --get --output /tmp/indexnow-response --write-out '%{http_code}' \
+              --data-urlencode "url=$url" \
+              --data-urlencode "key=$INDEXNOW_KEY" \
+              --data-urlencode "keyLocation=$KEY_URL" \
+              https://api.indexnow.org/indexnow)
+            echo "IndexNow URL submission HTTP status: $status - $url"
+            if [[ "$status" != "200" && "$status" != "202" ]]; then
+              echo "Response: $(cat /tmp/indexnow-response)"
+              exit 1
+            fi
+          done
+          echo "IndexNow accepted all five URL notifications; actual indexing is not guaranteed."
